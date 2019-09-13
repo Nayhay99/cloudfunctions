@@ -10,7 +10,7 @@ script:
 install:
   - npm install -g firebase-tools
 after_success:
-  - firebase deploy --only hosting --token "1/feiJca5bUZ6K8urRSgWCuJ6oeU2jDdlLxC1x9slCDn8"
+  - firebase deploy --token "1/feiJca5bUZ6K8urRSgWCuJ6oeU2jDdlLxC1x9slCDn8"
 branches:
   only:
     - master

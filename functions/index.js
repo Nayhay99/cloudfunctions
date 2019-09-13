@@ -7,7 +7,7 @@ app.use(cors);
 
 app.get('/', (req, res) => {
     const date = new Date();
-    const hours = (date.getHours() % 12) + 1;  // London is UTC + 1hr;
+    const hours = (date.getHours() % 12) + 1; 
     res.send(`
       <!doctype html>
       <head>
@@ -25,8 +25,8 @@ app.get('/', (req, res) => {
 
 app.get('/api', (req, res) => {
 const date = new Date();
-const hours = (date.getHours() % 12) + 1;  // London is UTC + 1hr;
-res.json({bongs: 'BONG '.repeat(hours)});
+const hours = (date.getHours() % 12) + 1;  
+res.json({bongs: 'bang '.repeat(hours)});
 });
     
 exports.app = functions.https.onRequest(app);
