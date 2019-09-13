@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
         <script src="/script.js"></script>
       </head>
       <body>
-        <p>In London, the clock strikes:
-          <span id="bongs">${'BONG '.repeat(hours)}</span></p>
+        <p>In India, the clock strikes:
+          <span id="bongs">${'BANG '.repeat(hours)}</span></p>
         <button onClick="refresh(this)">Refresh</button>
       </body>
     </html>`);
